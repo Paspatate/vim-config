@@ -123,6 +123,13 @@ set scrolloff=10
 
 " [[ Basic Keymaps ]]
 
+" Add corresponding braces 
+inoremap { {}<Esc>ha
+inoremap ( ()<Esc>ha
+inoremap [ []<Esc>ha
+inoremap " ""<Esc>ha
+inoremap ' ''<Esc>ha
+inoremap ` ``<Esc>ha
 " Set highlight on search, but clear on pressing <Esc> in normal mode
 set hlsearch
 nnoremap <Esc> :nohlsearch<CR>
@@ -202,6 +209,9 @@ Plug 'ghifarit53/tokyonight-vim'
 
 " Set airline as statusline
 Plug 'vim-airline/vim-airline'
+" Syntax highlighting
+"
+Plug 'sheerun/vim-polyglot'
 call plug#end()
 
 
