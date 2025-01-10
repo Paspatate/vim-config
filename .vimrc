@@ -120,16 +120,19 @@ set cursorline
 " Minimal number of screen lines to keep above and below the cursor
 set scrolloff=10
 
+" Set the tabwidth to 4 character
+set tabstop=4
+
 
 " [[ Basic Keymaps ]]
 
 " Add corresponding braces 
-inoremap { {}<Esc>ha
-inoremap ( ()<Esc>ha
-inoremap [ []<Esc>ha
-inoremap " ""<Esc>ha
-inoremap ' ''<Esc>ha
-inoremap ` ``<Esc>ha
+" inoremap { {}<Esc>ha
+" inoremap ( ()<Esc>ha
+" inoremap [ []<Esc>ha
+" inoremap " ""<Esc>ha
+" inoremap ' ''<Esc>ha
+" inoremap ` ``<Esc>ha
 " Set highlight on search, but clear on pressing <Esc> in normal mode
 set hlsearch
 nnoremap <Esc> :nohlsearch<CR>
@@ -206,6 +209,8 @@ Plug 'prabirshrestha/asyncomplete-lsp.vim'
 
 " Colorscheme
 Plug 'ghifarit53/tokyonight-vim'
+Plug 'gruvbox-community/gruvbox'
+Plug 'catppuccin/vim', { 'as': 'catppuccin' }
 
 " Set airline as statusline
 Plug 'vim-airline/vim-airline'
@@ -220,7 +225,7 @@ call plug#end()
 set termguicolors
 let g:tokyonight_style = 'night'  " available: night, storm
 let g:tokyonight_enable_italic = 0
-colorscheme tokyonight
+colorscheme gruvbox
 
 
 " [[ Configure vim-which-key ]]
